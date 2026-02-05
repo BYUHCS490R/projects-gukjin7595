@@ -1,0 +1,25 @@
+header h1 {
+    color: #3300AA;
+    font-size: 18px;
+}
+
+
+header {
+    background-color: lightblue;
+}
+
+main > p {
+    background-color: #f2f2f2;
+}
+
+#firstP {
+    color: rgb(200,0,200);
+}
+
+.bolder {
+    font-weight: bold;
+}
+
+.darker {
+    color: brown;
+}
