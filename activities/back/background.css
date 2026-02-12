@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('bbb.png');
+    background-size: cover;
+    background-repeat: repeat;
+    background-color: rgb(170, 170, 94);
+}
+
+
+.decorative {
+    min-height: 80px;
+    background-image: url(sakura-flower.png);
+
+}
