@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: aquamarine;
+    padding: 50px 100px 50px 10px;
+}
+
+main {
+    background-color: antiquewhite;
+}
+
+.mainpicture {
+    background-color: rgb(112, 77, 77);
+    width: 275px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+
+footer {
+    background-color: rgb(182, 143, 218);
+}
