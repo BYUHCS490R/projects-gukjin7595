@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Tree {
+    width: 300px;
+    border: solid black;
+    float: right;
+}
+
+.Tree img {
+    width: 300px;
+}
+
+.first {
+    width: 150px;
+}
+
+.fot {
+    border: thin solid purple;
+    width: 200px;
+}
+
+.stop {
+    clear: both;
+}
