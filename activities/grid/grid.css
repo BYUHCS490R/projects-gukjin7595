@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    background-color: rgb(184, 222, 209);
+    color: rgb(76, 58, 58);
+    margin: 3px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 2fr 4fr 1fr;
+}
