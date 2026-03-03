@@ -58,6 +58,11 @@ footer {
     grid-template-columns: repeat(5, 1fr);
     background-color: aquamarine;
     padding: 20px;
+    
+}
+
+footer a {
+    display: block
 }
 
 footer a:hover {
