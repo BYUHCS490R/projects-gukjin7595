@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-top: 80px;
+}
+
+header {
+    background-color: bisque;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(54, 91, 78);
+}
+
+nav a {
+    display: block;
+    padding: 10px 20px;
+    color: rgb(13, 33, 26);
+    text-decoration: none;
+}
+
+.card {
+    width: 250px;
+    box-shadow: 5px 5px 5px cornflowerblue;
+}
+
+.card h2 {
+    margin: 3px 0;
+}
+
+.cardfig {
+    margin: 0;
+    font-size: 10px;
+}
+
+.cardfig img {
+    width: 50%;
+}
+
+.card { 
+    border: thin solid rgb(42, 83, 164);
+
+}
+
+.card a {
+    display: block;
+    width: 90%;
+    padding: 3px 5px;
+    background-color: rgb(149, 110, 51);
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.layout {
+    display: flex;
+}
+
+aside {
+    width: 20%;
+    background-color: rgb(53, 104, 87);
+    padding: 10px;
+}
+
+
+.container {
+    display: flex;
+}
+
+
+
+@media ONLY screen AND (max-width: 600px) {
+    body {
+        background-color: bisque;
+    }
+
+    nav a {
+        border-bottom: thin solid #fff;
+    }
+
+    .main-row {
+        flex-direction: column-reverse;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .row {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .card {
+        width: 95%;
+        margin-bottom: 10px;
+    }
+    .main-card {
+        order: -1;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media print {
+    
+}
