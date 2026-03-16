@@ -1,3 +1,57 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.schedule {
+    /*border: 1px solid #000;*/
+    caption-side: bottom;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*.schedule td, .schedule th {
+    border: 1px solid #000;
+    background-color: antiquewhite;
+} */
+
+
+.schedule thead,.schedule tfoot{
+    background-color: rgb(206, 206, 41);
+    color: rgb(0, 0, 0);
+}
+
+
+.schedule td {
+    vertical-align: top;
+    border-bottom: 1px solid red;
+}
+
+.odd {
+
+    background-color: rgb(205, 170, 124);
+}
+
+
+.second {
+    background-color: blanchedalmond;
+}
+
+.intro::first-letter {
+    font-size: larger;
+    color: rgb(223, 5, 5);
+    font-weight: bold;
+}
+
+
+h1 {
+    text-align: center;
+    border: 1px solid;
+    background-color: rgb(179, 126, 47);
+}
+
+caption {
+    background-color: aqua;
+}

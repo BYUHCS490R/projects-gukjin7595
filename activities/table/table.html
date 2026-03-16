@@ -8,11 +8,13 @@
 </head>
 <body>
     <header>
-        <h1>Table</h1>
+        <h1 class="intro">Table</h1>
     </header>
     <main>
         <h2>Class Schedule</h2>
-        <table border="1">
+        <p class="intro"> This is my schedule for the winter semester.</p>
+        <table class="schedule">
+            <thead>
                 <tr>
                     <th>Course Number</th>
                     <th>Title</th>
@@ -20,7 +22,8 @@
                     <th>Location</th>
                     <th>Credits</th>
                 </tr>
-                <tr>
+            </thead>
+                <tr class="odd">
                     <td>IT 240</td>
                     <td>Web Design</td>
                     <td>MWF 11AM</td>
@@ -34,14 +37,14 @@
                     <td>P2</td>
                     <td>3</td>
                 </tr>
-                <tr>
+                <tr class="odd">
                     <td>REL225</td>
                     <td>The book of Mormon</td>
                     <td>TuTh 10AM</td>
                     <td>STC</td>
                     <td>2</td>
                 </tr>
-                <tr>
+                <tr class="second">
                     <th colspan="5">Fall 2025</th>
                 </tr>
                 <tr>
@@ -51,7 +54,7 @@
                     <td>P2</td>
                     <td>3</td>
                 </tr>
-                <tr>
+                <tr class="odd">
                     <td>REL225</td>
                     <td>The book of Mormon</td>
                     <td>TuTh 10AM</td>
@@ -74,12 +77,11 @@
         </table>
         
         <h2>Questions</h2>
-        <p>When do you use a table?</p>
-        <p>Need to show structured data in rows and columns</p>
-        <p>When do you not use a table?</p>
-        <p>dont use it for page layout or general content.</p>
-        <p>When do you need to do extra work for table accessibility?</p>
-        <p>When table have headers or complex structures, I need to add proper header tags and attributes for screen readers.</p>
+        <p>Why don't we use the border attribute?</p>
+        <p>Because it is outdated. styling like borders should be done with CSS instead of HTML</p>
+        <p>What is the easiest way to color every other row a different color?</p>
+        <p>Use the CSS :nth-child selector to style alternate rows.</p>
+        
     </main>
     <footer>
         <p>&copy; 2026 Song</p>
