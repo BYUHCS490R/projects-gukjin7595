@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        Song web Design
+    </header>
+    <main>
+        <form action="formprocs.html" method="get">
+            <div>
+                <label for="fname">Name:</label>
+                <input type="text" name="fullname" id="fname" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="name@email.com">
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" name="pass" id="password">
+            </div>
+            <div>
+                <label for="state">State:</label>
+                <select name="state" id="state">
+                    <option value="CA">California</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="UT">Utah</option>
+                </select>
+            </div>
+            <div>
+                <label for="comments">Comments</label>
+                <textarea name="comments" id="comments">Pre-filled in</textarea>
+            </div>
+            <div>
+                Gender:
+                <label><input type="radio" name="Gender" value="male"> Male</label>
+                <label><input type="radio" name="Gender" value="female"> Female</label>
+            </div>
+            <div>
+                
+                <label><input type="checkbox" name="remember" value="male" checked> Remember me?</label>
+            </div>
+            <div>
+                <input type="submit" value="Sign Up">
+            </div>
+
+        </form>
+
+        <h2>Questions</h2>
+        <p>The form tag has an "action" attribute. What does it do?</p>
+        <p>This action specifies where the form data is sent</p>
+        <p>The form tag has a "method" attribute. What does it do?</p>
+        <p>This method tag specifies how the data is sent to the server</p>
+        <p>What is the difference between a "POST" and a "GET"?</p>
+        <p>Post sends a data in the request body, no size limit and it's more secure. It's used for saving data.</p>
+        <p>Get sends data in the URL, limited length and less secure than POST. It's used for retrieving data.</p>
+
+    </main>
+    <footer>
+        <p>&copy; 2026 GukJin Song</p>
+    </footer>
+</body>
+</html>
