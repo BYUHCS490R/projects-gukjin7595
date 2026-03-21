@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <link rel="stylesheet" href="form.css">
+    <meta name="viewport" content="width=device-width", initial-scale="1">
 </head>
 <body>
     <header>
@@ -12,19 +13,21 @@
     </header>
     <main>
         <form action="formprocs.html" method="get">
-            <div>
+            <fieldset>
+                <legend>Sign Up</legend>
+            <div class="form-row">
                 <label for="fname">Name:</label>
                 <input type="text" name="fullname" id="fname" required>
             </div>
-            <div>
+            <div class="form-row">
                 <label for="email">Email:</label>
                 <input type="text" name="email" id="email" placeholder="name@email.com">
             </div>
-            <div>
+            <div class="form-row">
                 <label for="password">Password:</label>
                 <input type="password" name="pass" id="password">
             </div>
-            <div>
+            <div class="form-row">
                 <label for="state">State:</label>
                 <select name="state" id="state">
                     <option value="CA">California</option>
@@ -32,33 +35,34 @@
                     <option value="UT">Utah</option>
                 </select>
             </div>
-            <div>
+            <div class="form-row">
                 <label for="comments">Comments</label>
                 <textarea name="comments" id="comments">Pre-filled in</textarea>
             </div>
-            <div>
-                Gender:
+            <div class="check-row"> 
+                <div class="spacer">Gender:</div> 
                 <label><input type="radio" name="Gender" value="male"> Male</label>
                 <label><input type="radio" name="Gender" value="female"> Female</label>
             </div>
-            <div>
-                
+            <div class="form-row">
+                <div class="spacer"></div>
                 <label><input type="checkbox" name="remember" value="male" checked> Remember me?</label>
             </div>
-            <div>
+            <div class="form-row">
                 <input type="submit" value="Sign Up">
             </div>
-
+            </fieldset>
         </form>
 
         <h2>Questions</h2>
-        <p>The form tag has an "action" attribute. What does it do?</p>
-        <p>This action specifies where the form data is sent</p>
-        <p>The form tag has a "method" attribute. What does it do?</p>
-        <p>This method tag specifies how the data is sent to the server</p>
-        <p>What is the difference between a "POST" and a "GET"?</p>
-        <p>Post sends a data in the request body, no size limit and it's more secure. It's used for saving data.</p>
-        <p>Get sends data in the URL, limited length and less secure than POST. It's used for retrieving data.</p>
+        <p>What are different ways to style your form?</p>
+        <p>In CSS ( colors, fonts, spacing, borders). 
+            Flexbox,Grid,Hover, Focus effects, media queires. 
+        </p>
+        <p>How does flex help for both Desktop and Mobile phones?</p>
+        <p>Easily aligns items in rows or columns
+            and adjusts layout automatically for different screen sizes
+        </p>
 
     </main>
     <footer>
