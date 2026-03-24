@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYUH Student</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>BYUH Student Registration</header>
+    <main>
+        <form>
+
+                <fieldset>
+                    <legend>Student Information</legend>
+                    <div class="form-row">
+                        <label for="name">Full name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="password">Passowrd:</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-row">
+                        <label for="Phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <div class="form-row">
+                        <label>Gender:</label>
+                        <div>
+                            <label><input type="radio" name="Gender" value="male">Male</label>
+                            <label><input type="radio" name="Gender" value="female">Female</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label>Hobbies:</label>
+                        <div>
+                            <label><input type="checkbox" name="hobby" value="sports">Sports</label>
+                            <label><input type="checkbox" name="hobby" value="music">Music</label>
+                            <label><input type="checkbox" name="hobby" value="game">Gaming</label>
+                            <label><input type="checkbox" name="hobby" value="study">Studying</label>
+                            <label><input type="checkbox" name="hobby" value="read">Reading</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="major">Major</label>
+                        <div>
+                            <select id="major" name="major">
+                                <option>Select</option>
+                                <option>Information Technology</option>
+                                <option>Art</option>
+                                <option>Accounting</option>
+                                <option>Finance</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="comments">Comments:</label>
+                        <textarea id="comments" name="comments"></textarea>
+                    </div>
+                </fieldset>
+                
+                <div>
+                    <input type="submit" value="submit">
+                </div>
+
+        </form>
+    </main>
+
+    <footer><p>&copy;2026 GukJin Song</p></footer>
+</body>
+</html>
