@@ -9,7 +9,7 @@
 <body>
     <header>BYUH Student Registration</header>
     <main>
-        <form>
+        <form id="myForm">
 
                 <fieldset>
                     <legend>Student Information</legend>
@@ -18,7 +18,7 @@
                         <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-row">
-                        <label for="password">Passowrd:</label>
+                        <label for="password">Password:</label>
                         <input type="password" id="password" name="password">
                     </div>
                     <div class="form-row">
@@ -73,8 +73,47 @@
                 </div>
 
         </form>
+
+
+        <h1>Question</h1>
+        <p>What is JavaScript? How did it get its name?</p>
+        <p>JavaScript is a programming language used to make websites interactive.
+            it was named for marketing reasons to sound similar to Java 
+        </p>
+        <p>What are the two ways you can run JavaScript?</p>
+        <p>In a web browser and On a server</p>
+        <p>What was the most popular front-end js library?</p>
+        <p>jQuuery is the most popular</p>
+        <p>What is the most popular front-end js library today?</p>
+        <p>React</p>
     </main>
 
     <footer><p>&copy;2026 GukJin Song</p></footer>
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit',function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const phone = document.getElementById('phone').value;
+
+            if (!name || !email) {
+                alert('You need a name and email.');
+                return
+            }
+            
+
+            const formData = {
+                name: name,
+                email: email,
+                password: password,
+                phone: phone 
+            };
+
+            console.log(formData);
+        });
+    </script>
 </body>
 </html>
