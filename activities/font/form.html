@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <link rel="stylesheet" href="form.css">
-    <meta name="viewport" content="width=device-width", initial-scale="1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <header>
         Song web Design
     </header>
-    <main>
-        <form action="formprocs.html" method="get">
+    <main id="message">
+        <form id='myForm' action="formprocs.html" method="get">
             <fieldset>
                 <legend>Sign Up</legend>
             <div class="form-row">
@@ -21,7 +21,7 @@
             </div>
             <div class="form-row">
                 <label for="email">Email:</label>
-                <input type="text" name="email" id="email" placeholder="name@email.com">
+                <input type="email" name="email" id="email" placeholder="name@email.com">
             </div>
             <div class="form-row">
                 <label for="password">Password:</label>
@@ -55,18 +55,17 @@
         </form>
 
         <h2>Questions</h2>
-        <p>What are different ways to style your form?</p>
-        <p>In CSS ( colors, fonts, spacing, borders). 
-            Flexbox,Grid,Hover, Focus effects, media queires. 
-        </p>
-        <p>How does flex help for both Desktop and Mobile phones?</p>
-        <p>Easily aligns items in rows or columns
-            and adjusts layout automatically for different screen sizes
-        </p>
+        <p>What is AJAX?</p>
+        <p>AJAX is a technique that allows a web page to update data without reloading the entire page.</p>
+        <p>Why do you put your JS code in a separate file?</p>
+        <p>Makes HTML cleaner and improves performance.</p>
+        
 
     </main>
     <footer>
         <p>&copy; 2026 GukJin Song</p>
     </footer>
+
+    <script src="form.js"></script>
 </body>
 </html>
