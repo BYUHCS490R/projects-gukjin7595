@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header, footer {
+    background-color: rgb(82, 82, 134);
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(255, 228, 196, 0.888);
+}
+
+nav a {
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+nav a.active {
+    background-color: rgba(58, 26, 26, 0.49);
+}
+
+nav a.hover {
+    background-color: rgb(95, 29, 29);
+}
+
+.container {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+    nav {flex-direction: column;}
+    nav a {text-align: center;
+    font-size: 18px;}
+}
