@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    background-color: rgb(113, 160, 160);
 }
 
 header, footer {
@@ -24,13 +25,54 @@ nav a.active {
     background-color: rgba(58, 26, 26, 0.49);
 }
 
-nav a.hover {
+nav a:hover {
     background-color: rgb(95, 29, 29);
 }
 
 .container {
     padding: 20px;
 }
+
+.card {
+    border: 1px solid black;
+    padding: 15px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.card img, .food img, .place1 img {
+    width: 100%
+}
+
+.place1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.food, .place1 {
+    border: 1px solid black;
+    padding: 15px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.foodmain {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.foodclass {
+    display: flex;
+}
+
+aside {
+    width: 25%;
+    padding: 20px;
+}
+
+
 
 table {
     width: 100%;
@@ -47,18 +89,80 @@ th, td {
 }
 
 form {
-    max-width: 400px;
+    max-width: 500px;
     margin: auto;
+    padding: 15px;
+    border-radius: 10px;
 }
 
-input, textarea, button {
-    width: 100%;
+fieldset {
+    border: 5px solid black;
+    margin-bottom: 10px;
     padding: 10px;
-    margin: 10px 0;
+}
+
+legend {
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-row {
+    align-items: center;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.form-row label {
+    width: 150px;
+}
+
+.form-row input, .form-row select, .form-row textarea {
+    flex: 1;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+input[type='submit'] {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
 }
 
 @media (max-width: 600px) {
     nav {flex-direction: column;}
     nav a {text-align: center;
     font-size: 18px;}
+
+    .foodmain {
+        grid-template-columns: 1fr;
+    }
+
+    .foodclass {
+        flex-direction: column;
+    }
+
+    .place1 {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-row label {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    input[type='submit'] {
+        width: 100%;
+        padding: 5px;
+        font-size: 10px;
+    }
 }
